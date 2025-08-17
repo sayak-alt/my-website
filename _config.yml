@@ -1,0 +1,57 @@
+title: "Sayak Chatterjee"
+name: "Sayak Chatterjee"
+email: sayakchatter@umass.edu
+description: >-
+  Experimental High Energy Nuclear Physics · Detector R&D · MOLLER Collaboration
+
+url: "" # set on publish, e.g., https://sayakchatterjee.github.io
+baseurl: ""
+
+# GitHub Pages supported remote theme
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+plugins:
+  - jekyll-feed
+  - jekyll-include-cache
+
+author:
+  name: "Sayak Chatterjee"
+  avatar: "/assets/images/avatar.png"
+  bio: "Postdoctoral Researcher at UMass Amherst · MOLLER Collaboration"
+  location: "Amherst, MA, USA"
+  links:
+    - label: Email
+      icon: "fas fa-envelope"
+      url: "mailto:sayakchatter@umass.edu"
+    - label: JLab
+      icon: "fas fa-atom"
+      url: "mailto:sayak@jlab.org"
+
+# Navigation
+collections:
+  publications:
+    output: true
+    permalink: /publications/:path/
+  talks:
+    output: true
+    permalink: /talks/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: single
+      author_profile: true
+
+# Minimal Mistakes options
+minimal_mistakes_skin: "dark"
+paginate: 5
+paginate_path: /page:num/
+timezone: America/New_York
